@@ -46,6 +46,7 @@ else:                       # else
 skip:
     add    s5, s5, s2      # i += stepSize
     add    s6, s6, s4      # ptr += 4*stepSize
+    sw     zero, 0(s6)
     # inner loop done?
     blt    s5, s0, innerloop  # while i < arraySize
         
